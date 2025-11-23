@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Projects - Mohan Rajasekaran</title>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Montserrat';
+      background: url("https://i.pinimg.com/1200x/72/80/1f/72801ffa33f68fb80d220ecbb65b60b9.jpg")
+                  no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      padding: 40px;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.60);
+      z-index: -1;
+    }
+
+    /* HEADER */
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .name-box {
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.45);
+      border-radius: 12px;
+      text-align: justify;
+    }
+
+    .first {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    .last {
+      font-size: 23.5px;
+      font-weight: 200;
+      margin-top: -15px;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    .navbar {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 0 10px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover { color: #ffd700; }
+    .navbar a.active { color: #ffd700; }
+
+    .navbar span { padding: 0 8px; font-weight: bold; }
+
+    /* PAGE TITLE */
+    header {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    /* CONTENT AREA */
+    .content-box {
+      width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    /* PROJECT BOXES */
+    .project-box {
+      width: 100%;
+      padding: 30px;
+      border-radius: 15px;
+      background: rgba(0,0,0,0.40);
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.35);
+    }
+
+    .project-box h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 900;
+    }
+
+    .project-box h3 {
+      text-align: center;
+      color: #ffd54f;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    /* CENTER + JUSTIFY CONTENT BETWEEN BLUE LINES */
+    .project-box .inner-content {
+      width: 70%;         /* adjust this for perfect visual width */
+      margin: 0 auto;     /* center the text block */
+      text-align: justify;
+      line-height: 1.7;
+      font-size: 19px;
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      padding: 18px 0;
+      text-align: center;
+      color: #fff;
+      margin-top: 40px;
+      backdrop-filter: blur(2px);
+    }
+
+    footer .name { font-weight: 700; font-size: 16px; }
+    footer .email { margin-top: 6px; font-size: 14px; color: #9feaf0; text-decoration: none; }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header-section">
+    <div class="name-box">
+      <div class="first">MOHAN</div>
+      <div class="last">RAJASEKARAN</div>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <span>|</span>
+      <a href="portfolio.html" class="active">PORTFOLIO</a>
+    </div>
+  </div>
+
+  <!-- PAGE TITLE -->
+  <header>PROJECTS</header>
+
+  <!-- CONTENT -->
+  <div class="content-box">
+
+    <!-- 1️⃣ DABBAWALLA BOX -->
+    <div class="project-box">
+      <h2>Dabbawalla Website</h2>
+      <h3>Frontend Development Project</h3>
+      <div class="inner-content">
+        MR Dabbawalla website – Designed and developed a responsive and user-friendly
+        web interface for a food ordering and delivery system. Built interactive pages
+        using HTML, CSS, JavaScript, ensuring seamless navigation. Integrated forms
+        for order and payment handling to provide a smooth end-to-end user experience.
+        
+        Some interactive pages include Home, About, Menu, Order, and Payment pages.
+        The project is built by splitting modules into smaller components and combining them
+        into one structured full-stack application.
+        <br><br>
+        Tools & Technologies: Java Spring Boot, HTML, CSS, JavaScript, MySQL,
+        and core Java concepts such as HashSet for menu items and pricing.
+      </div>
+    </div>
+
+    <!-- 2️⃣ CRM BOX -->
+    <div class="project-box">
+      <h2>CRM Portal</h2>
+      <h3>Customer Relationship Management System</h3>
+      <div class="inner-content">
+        A fully functional CRM (Customer Relationship Management) portal with modules for contacts, 
+        leads, sales, support tickets, and analytics. The system helps businesses track interactions 
+        with customers and improve service efficiency.
+       
+        The portal includes structured components, a dashboard, and multiple functional modules for 
+        managing customer data and operations. Features include automated lead flow, sales tracking, 
+        customer support ticketing, and performance analytics.
+        <br><br>
+     Tools & Technologies: Java, Spring Boot, HTML, CSS, JavaScript, and MySQL database.
+      </div>
+    </div>
+
+    <!-- 3️⃣ PORTFOLIO BOX -->
+    <div class="project-box">
+      <h2>Portfolio Website Creation</h2>
+      <h3>Personal Web Development Project</h3>
+      <div class="inner-content">
+        A fully responsive and modern website using HTML,
+        CSS, and JavaScript, focusing on clean UI/UX design and professional visual
+        appeal. The project includes multiple structured sections such as Home, 
+        About, Portfolio.
+        
+        Smooth animations, transitions, and interactive elements like hover effects and
+        animated cards enhance the user experience. Overall, this project showcases 
+        my ability to design and build complete, user-focused websites from scratch 
+        with attention to design, performance, and usability.
+        <br><br>
+         Tools & Technologies: HTML, CSS, JavaScript, UI/UX design principles.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="name">MOHAN RAJASEKARAN</div>
+    <a class="email" href="mailto:moheemohan123@gmail.com">moheemohan123@gmail.com</a>
+  </footer>
+
+</body>
+</html>

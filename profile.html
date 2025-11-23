@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile - Mohan Rajasekaran</title>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Montserrat';
+      background: url("https://i.pinimg.com/1200x/72/80/1f/72801ffa33f68fb80d220ecbb65b60b9.jpg")
+                  no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      padding: 40px;
+      position: relative;
+    }
+
+    /* Dark Overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.60);
+      z-index: -1;
+    }
+
+    /* Header Section */
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    /* Name Box */
+    .name-box {
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.45);
+      border-radius: 12px;
+      text-align: justify;
+    }
+
+    .first {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    .last {
+      font-size: 23.5px;
+      font-weight: 200;
+      margin-top: -15px;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 0 10px;
+      transition: 0.3s;
+    }
+
+    .navbar a.active { color: #ffd700; }
+    .navbar a:hover { color: #ffd700; }
+    .navbar span { padding: 0 8px; font-weight: bold; }
+
+    /* Page Header Title */
+    header {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    /* ONE COLUMN LAYOUT */
+    .content {
+      width: 85%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    /* Box Style */
+    .box {
+      background: rgba(0, 0, 0, 0.40);
+      border-radius: 15px;
+      padding: 30px;
+      font-size: 20px;
+      line-height: 1.6;
+      width: 100%;
+      text-align: center;
+    }
+
+    .box h2 {
+      margin-bottom: 15px;
+      font-size: 26px;
+      color: #ffd700;
+      font-weight: 900;
+    }
+
+    /* Remove bullets in Education box */
+    .education-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    li { margin-bottom: 12px; }
+
+    /* ⭐ SKILLS: 3 COLUMNS, NO BULLETS, CENTER ALIGNED ⭐ */
+    .skills-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      gap: 12px 40px;
+      list-style: none;
+      margin: auto;
+      width: 70%;
+      text-align: center;   /* ⭐ Center aligns the text in each column */
+    }
+
+    /* POSITION BOX */
+    .landscape-box {
+      width: 85%;
+      margin: 40px auto 0 auto;
+      background: rgba(0,0,0,0.40);
+      border-radius: 15px;
+      padding: 30px 40px;
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .landscape-box h2 {
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+
+    .landscape-box .line {
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 40px;
+      color: #fff;
+      backdrop-filter: blur(2px);
+    }
+
+    footer .name { font-weight: 700; font-size: 16px; }
+    footer .email { margin-top: 6px; color: #9feaf0; text-decoration: none; }
+
+    /* Responsive Layout */
+    @media (max-width: 900px) {
+      .skills-list {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header-section">
+    <div class="name-box">
+      <div class="first">MOHAN</div>
+      <div class="last">RAJASEKARAN</div>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <span>|</span>
+      <a href="portfolio.html" class="active">PORTFOLIO</a>
+    </div>
+  </div>
+
+  <!-- PAGE TITLE -->
+  <header>PROFILE</header>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- EDUCATION BOX -->
+    <div class="box">
+      <h2>EDUCATION</h2>
+      <ul class="education-list">
+        <li><b>Under Graduation</b> <br>BCA Computer Application<br> SRM University <br> CGPA: 9.47</li><br>
+        <li><b>Higher Secondary Education</b><br>National IT International Matriculation School<br>Percentage: 80.6%</li><br>
+        <li><b>Secondary Education</b> <br>Sri Sarada Secondary School <br>Percentage: 75.2%</li>
+      </ul><br>
+
+      <h2>LANGUAGE</h2>
+      English<br>Tamil<br>
+    </div>
+
+    <!-- SKILLS BOX -->
+    <div class="box">
+      <h2>SKILLS</h2>
+      <ul class="skills-list">
+        <li>Java</li>
+         <li>Spring Boot</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+        <li>Problem Solving</li>
+        <li>Team Collaboration</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- POSITION BOX -->
+  <div class="landscape-box">
+    <h2>POSITION & RESPONSIBILITIES</h2>
+
+    <div class="line"><b>Secretary,</b> Casyum'25 event.</div>
+    <div class="line"><b>Overall Event Coordinator,</b> Aestech’25 event.</div>
+    <div class="line"><b>Member</b> of the Innovation, Incubation & Entrepreneurship Committee.</div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="name">MOHAN RAJASEKARAN</div>
+    <a href="mailto:moheemohan123@gmail.com" class="email">moheemohan123@gmail.com</a>
+  </footer>
+
+</body>
+</html>

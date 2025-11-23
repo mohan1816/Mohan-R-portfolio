@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Industry Exposure - Mohan Rajasekaran</title>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Montserrat';
+      background: url("https://i.pinimg.com/1200x/72/80/1f/72801ffa33f68fb80d220ecbb65b60b9.jpg")
+                  no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      padding: 40px;
+      position: relative;
+    }
+
+    /* Dark Overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.60);
+      z-index: -1;
+    }
+
+    /* Header Section */
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    /* Name Box */
+    .name-box {
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.45);
+      border-radius: 12px;
+      text-align: justify;
+    }
+
+    .first {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    .last {
+      font-size: 23.5px;
+      font-weight: 200;
+      margin-top: -15px;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 0 10px;
+      transition: 0.3s;
+    }
+
+     .navbar a.active {
+      color: #ffd700;
+    }
+    .navbar a:hover { color: #ffd700; }
+    .navbar span { padding: 0 8px;
+      font-weight: bold;}
+
+    /* Page Header Title */
+    header {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    /* Content Centered Column */
+    .content {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    /* Box Style (No Outline) */
+    .box {
+      background: rgba(0, 0, 0, 0.40);
+      border-radius: 15px;
+      padding: 30px;
+      font-size: 20px;
+      line-height: 1.6;
+      width: 100%;
+      margin: auto;
+        text-align: center;
+
+    }
+
+    .box h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #ffd700;
+      font-weight: 900;
+     
+    }
+
+    .box ul {
+      padding-left: 20px;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 40px;
+      color: #fff;
+      backdrop-filter: blur(2px);
+    }
+
+    footer .name { font-weight: 700; font-size: 16px; }
+    footer .email { margin-top: 6px; color: #9feaf0; text-decoration: none; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header-section">
+    <div class="name-box">
+      <div class="first">MOHAN</div>
+      <div class="last">RAJASEKARAN</div>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <span>|</span>
+      
+      <a href="portfolio.html" class="active" >PORTFOLIO </a>   
+    </div>
+    
+  </div>
+
+  <!-- PAGE TITLE -->
+  <header>INDUSTRY EXPOSURE</header>
+
+  <!-- CONTENT: CENTERED BOXES -->
+  <div class="content">
+
+    
+
+       <div class="box">
+      <h2>CERTIFICATES</h2>
+      
+       Master in JAVA Full Stack Development - Livewire<Br>
+        Diploma in Computer Education - Imperial Info System<Br>
+        Typewriting - English (Lower)<Br>
+      
+    </div>
+<div class="box">
+      <h2 >INTERNSHIP</h2>
+      <p>
+        <b>INFOTACT SOLUTIONS</b><br>
+        03/2025 – 06/2025, Bengaluru<br>
+        <b>Domain:</b> Web Development<br>
+        Worked on CRM modules including contacts, leads, sales, and support.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>INDUSTRIAL VISIT</h2>
+      <p>
+        8Queens Software Technologies Pvt. Ltd.<br>
+        In association with Purple Cube Technologies Pvt. Ltd., Chennai.
+      </p>
+    </div>
+
+   
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="name">MOHAN RAJASEKARAN</div>
+    <a href="mailto:moheemohan123@gmail.com" class="email">moheemohan123@gmail.com</a>
+  </footer>
+
+</body>
+</html>

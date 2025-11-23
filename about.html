@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>About - Mohan Rajasekaran </title>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Montserrat';
+      background: url("https://i.pinimg.com/1200x/72/80/1f/72801ffa33f68fb80d220ecbb65b60b9.jpg") 
+                  no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      padding: 40px;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.60);
+      z-index: -1;
+    }
+
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .name-box {
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.45);
+      border-radius: 12px;
+      text-align: justify;
+    }
+
+    .first {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    .last {
+      font-size: 23.5px;
+      font-weight: 200;
+      margin-top: -15px;
+       font-family: "Arial Black", sans-serif;
+      
+    }
+
+    .navbar {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 0 10px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffd700;
+    } 
+
+.navbar a.active {
+      color: #ffd700;
+    }
+    
+    .navbar span {
+      padding: 0 8px;
+      font-weight: bold;
+    }
+
+    .content-box {
+      width: 70%;
+      margin: 40px auto;
+      background: rgba(0,0,0,0.40);
+      padding: 40px;
+      border-radius: 18px;
+      text-align: justify;
+    }
+
+    .content-box h2 {
+      font-size: 32px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: left;
+      text-align: justify;
+    }
+
+    .content-box p {
+      font-size: 19px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      text-align: left;
+      text-align: justify;
+    }
+
+    footer {
+      width: 100%;
+      padding: 18px 0;
+      text-align: center;
+      color: #fff;
+      backdrop-filter: blur(2px);
+      position: relative;
+      z-index: 1;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+
+    footer .name { font-weight: 700; font-size: 16px; letter-spacing: 0.6px; }
+    footer .email { margin-top: 6px; font-size: 14px; color: #9feaf0; text-decoration: none; }
+  </style>
+</head>
+
+<body>
+
+  <div class="header-section">
+
+    <div class="name-box">
+      <div class="first">MOHAN</div>
+      <div class="last">RAJASEKARAN</div>
+    </div>
+  
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <span>|</span>
+      <a href="about.html" class="active">ABOUT</a>
+      <span>|</span>
+      <a href="portfolio.html">PORTFOLIO</a>
+    </div>
+  </div>
+
+  <div class="content-box">
+ <h1><B>ABOUT ME</B></h1>
+<br>
+        <p>
+         I am mohan Rajasekaran, a passionate BCA graduate with a strong foundation in computer applications 
+          and a keen interest in software development. Throughout my academic journey, I 
+          have gained knowledge in programming, web development, and database management. 
+          I successfully completed a Full Stack Development course, covering Java, HTML, 
+          CSS, JavaScript, DBMS, Spring Boot, and Bootstrap. This has equipped me with both 
+          front-end and back-end development skills to build dynamic, user-friendly 
+          applications.
+          Beyond academics, I actively contributed to leadership and event management roles.
+          I served in symposiums like Casyum’25, AesTech’25. I am also an active committee member 
+          of the Incubation, Innovation, and Entrepreneurship cell. These roles helped me 
+          develop communication, coordination, and organizational skills.
+        </p>
+<br>
+<br>
+
+        <p>
+          My academic projects and event experiences have strengthened my problem-solving, 
+          teamwork, and decision-making capabilities. I enjoy taking on challenges that push 
+          me to think critically and create innovative solutions. In addition to technical 
+          knowledge, I possess strong collaboration abilities that help me adapt easily to 
+          diverse working environments.
+          Outside of technology, I have a deep interest in art-related activities, which 
+          allow me to express creativity and maintain balance between logical and artistic 
+          skills. My long-term goal is to combine creativity and technical expertise to 
+          contribute meaningfully to projects that inspire innovation and impact.
+        </p>
+
+  </div>
+
+<footer>
+      <div class="name">MOHAN RAJASEKARAN</div>
+      <a class="email" href="mailto:moheemohan123@gmail.com">moheemohan123@gmail.com</a>
+</footer>
+
+</body>
+</html>

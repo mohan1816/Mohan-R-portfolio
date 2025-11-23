@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Home - Mohan Rajasekaran </title>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Montserrat';
+      background: url("https://i.pinimg.com/1200x/72/80/1f/72801ffa33f68fb80d220ecbb65b60b9.jpg") 
+                  no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      padding: 40px;
+      position: relative;
+      
+    }
+
+    /* DARK OVERLAY */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.60);
+      z-index: -1;
+    }
+
+    /* HEADER SECTION */
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    /* NAME BOX */
+    .name-box {
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.45);
+      border-radius: 12px;
+      text-align: justify;
+    }
+
+    .first {
+      font-size: 48px;
+      font-weight: 900;
+   font-family: "Arial Black", sans-serif;
+   
+    }
+
+    .last {
+      font-size: 23.5px;
+      font-weight: 200;
+      margin-top: -15px;
+       font-family: "Arial Black", sans-serif;
+     
+    }
+
+    /* NAVBAR RIGHT */
+    .navbar {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 0 10px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffd700;
+    }
+    .navbar a.active {
+      color: #ffd700;
+    }
+
+
+    .navbar span {
+      padding: 0 8px;
+      font-weight: bold;
+    }
+
+    /* MAIN CONTENT BOX */
+    .content-box {
+      width: 70%;
+      margin: 40px auto;
+      background: rgba(0,0,0,0.40);
+      padding: 40px;
+      border-radius: 18px;
+      text-align: justify;
+    }
+
+    .content-box h2 {
+      font-size: 32px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: left;
+      text-align: justify;
+    }
+
+    .content-box p {
+      font-size: 19px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      text-align: left;
+      text-align: justify;
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      padding: 18px 0;
+      text-align: center;
+      color: #fff;
+      backdrop-filter: blur(2px);
+      position: relative;
+      margin-top: 30px;
+      z-index: 1;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+
+    footer .name { font-weight: 700; font-size: 16px; letter-spacing: 0.6px; }
+    footer .email { margin-top: 6px; font-size: 14px; color: #9feaf0; text-decoration: none; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header-section">
+    <div class="name-box">
+      <div class="first">MOHAN</div>
+      <div class="last">RAJASEKARAN</div>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html" class="active">HOME</a>
+      <span>|</span>
+      <a href="about.html">ABOUT</a>
+      <span>|</span>
+      <a href="portfolio.html">PORTFOLIO</a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT BOX -->
+  <div class="content-box">
+
+    <h1> <B>WELCOME</B></h1>
+<br>
+    <p>
+     I am a passionate and dedicated developer with a strong interest in building clean,
+          efficient, and user-friendly applications. I enjoy transforming ideas into functional designs using modern
+          technologies and creative problem-solving. My work focuses on consistency, clarity, and delivering high-quality
+          solutions. I am always eager to learn new tools, explore innovative concepts, and improve my craft. This portfolio
+          showcases my skills, projects, and achievements as I continue to grow as a developer. Thank you for visiting!
+    </p>
+<br>
+<br>
+    <h2>GOAL</h2>
+
+    <p>
+       My career goal is to become a strong full-stack developer who can build modern, efficient, and user-friendly
+          applications. I aim to learn advanced tools, frameworks, and technologies to enhance my problem-solving abilities.
+          I want to work in an innovative environment where I can contribute ideas and develop practical solutions. Along
+          with technical growth, I wish to improve my leadership, communication, and teamwork skills. I hope to take part in
+          projects that create a positive impact and support organizational success. To blend creativity and technology to build
+          meaningful and inspiring work.
+    </p>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="name">MOHAN RAJASEKARAN</div>
+    <a class="email" href="mailto:moheemohan123@gmail.com">moheemohan123@gmail.com</a>
+  </footer>
+
+</body>
+</html>
